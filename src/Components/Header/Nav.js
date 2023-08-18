@@ -4,7 +4,7 @@ import {FaBars,FaTimes} from 'react-icons/fa'
 
 export default function Nav() {
 
-    const navRef=useRef();
+   
 
     const nav=[
         {id:1,item:"Workspace"},
@@ -16,11 +16,7 @@ export default function Nav() {
     ]
 
 
-    const showMenu=()=>{
-
-          navRef.current.classList.toggle("Responsive_nav")
-
-    }
+   
   return (
     <nav className='navigation'>
        <div ref={navRef} className="nav">
@@ -35,15 +31,10 @@ export default function Nav() {
                     )
                   }
 
-                <button className='nav-btn nav-close-btn' onClick={showMenu}>
-                        <FaTimes/>
-                </button>
             </ul>
        </div>
 
-                <button className='nav-btn' onClick={showMenu}>
-                    <FaBars/>
-                </button>
+            
     </nav>
   )
 }
