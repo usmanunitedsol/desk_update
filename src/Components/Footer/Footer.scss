@@ -1,0 +1,66 @@
+@import "../../SCSS/main.scss";
+@mixin button_content {
+    display: flex;
+    justify-content: center;
+
+  }
+
+footer{
+   
+
+    background-color: #1E3954;
+    padding: 25px 110px;
+    .footer{
+
+        width: 100%;
+        margin: auto;
+        max-width: 1700px;
+
+        .footer_section{
+              color: var(--white);
+
+            .footer_location{
+                &::before{
+                    content:url('../../images/location.png');
+                    padding-top: 7px;
+                    padding-right: 5px;
+                }
+            }
+
+                .header_sec_number{
+                    color: white;
+                    text-decoration: none;
+                    @include button_content;
+                    align-items: center;
+                    font-size: 15px;
+                    font-weight: 300;
+                    &::before{
+                 
+                        content:url('../../images/Icon.png');
+                        padding-top: 7px;
+                        padding-right: 5px;
+                       
+                    }
+
+                  
+
+            }
+
+            .text_styling {
+                a{ text-decoration: none;}
+            }
+            .footer_req{
+                background-color: #0C2945;
+                &:hover{
+                    border: none;
+                }
+            }
+          
+        
+    }
+}
+
+@media (max-width:767px) {
+    padding: 25px 0px;
+}
+}

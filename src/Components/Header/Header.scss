@@ -1,0 +1,293 @@
+@import "../../SCSS/main.scss";
+
+
+
+
+header{
+ 
+    padding: 25px 110px;
+    background-color: red;
+   
+    .headerContainer{
+
+        width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box;
+
+        
+        .header{
+     
+            .top_row{
+                @include flex;grid-gap: 4%;
+
+                .head_logo{
+                    max-width: 210px;
+                    img{
+                        width: 100%;
+                    }
+
+                    a{
+                        display: block;
+                    }
+
+                }
+                .header_buttons {
+                    
+                    .button_block{
+
+                        .btn-primary
+                        {
+                            grid-gap: 8px;
+                        }
+                        :nth-child(2){
+                            background-color: transparent;
+                            color: white;
+                            border: 1px solid white;
+                        }
+                        :nth-child(2)::before
+                         {
+                            content:url('../../images/registericon.png');
+                            margin-bottom: -8px;
+            
+                        
+                         }
+
+                         :nth-child(3)::before
+                         {
+                            content:url('../../images/Seat\ icon.png');
+                            margin-bottom: -8px;
+                            
+                     
+                        
+                         }
+                    }
+                }
+            }
+
+
+            .nav_block{
+                padding: 25px 0px;
+                .navigation{         
+                    .nav{
+                          position: fixed;
+                          top: 0;
+                          left: 0;
+                          height: 100%;
+                          width: 100%;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 1.5rem;
+                          background-color: #2C897E;
+                          transition: 1s;
+                          transform: translateY(-100vh);
+                         
+
+                        .nav_bar{
+                            @include flex; justify-content: center; grid-gap:30px;padding-left: unset;  
+                            .nav_list{          
+                                    .nav_item{     
+                                        color: white;font-weight: 300;font-size: 15px;text-decoration: none;transition: .3s ease-in-out; display: inline-block;
+                                        &:hover{
+                                            color: #2C897E;
+                                        } 
+                                    }
+
+                                   
+                                
+                            }
+                        }
+                    }
+                }
+
+                .nav-btn{
+                    padding: 5px;
+                    cursor: pointer;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    color: #2C897E;visibility: hidden;opacity: 0;
+                }
+            }
+        }
+          
+            .navborder{
+                background-color: var(--secondary-color);
+              
+            }
+           
+    
+
+        .navbar{
+
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 0.1rem;
+            padding-bottom: 0.5rem;
+            margin-top: -11px;
+      
+    
+                .nav-link{
+    
+                    color: white;
+                    font-weight: 300;
+                    font-size: 15px;
+                    padding: 0px 0px;
+                    padding-right: 50px !important;
+                     padding-left: 0px !important;
+    
+                    &:focus,&:hover {
+                         color: #2C897E;
+                         text-decoration: overline;
+                     }
+                }  
+            
+                                                                                
+                
+            
+        }
+
+    }
+
+ 
+
+    
+
+
+    
+   
+
+
+   
+}
+
+
+@media screen and (min-width:200px) and (max-width:1024px){ 
+  
+    header{
+
+    
+       
+        .headerContainer{
+    
+    
+            
+            .header{
+                .nav_block{
+                    .navigation{    
+                    .nav-btn{
+                      visibility: visible;opacity: 1;
+                    }
+
+                    .Responsive_nav{
+                        transform: none;
+
+                }
+                }
+
+               
+            }
+
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:200px) and (max-width:767px){ 
+     
+
+
+    header{
+
+        padding: 25px 10px;
+       
+        .headerContainer{
+    
+            width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box; position: relative;
+    
+            
+            .header{
+         
+                .top_row{
+               flex-wrap: wrap;
+               .head_logo{
+          
+                img{
+                    width: 70%;
+                }
+
+              
+
+            }
+                }
+            
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    header{
+
+        padding: 25px 10px;
+    .headerContainer{
+    
+        width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box; position: relative;
+
+        
+        .header{
+     
+            .top_row{
+           flex-wrap: wrap;
+           .head_logo{
+      
+            img{
+                width: 80%;
+            }
+
+          
+
+        }
+            }
+        
+        }
+    }
+} 
+    
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1400px) {
+
+    header{
+
+        padding: 25px 10px;
+    .headerContainer{
+    
+        width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box; position: relative;
+
+        
+        .header{
+     
+            .top_row{
+           flex-wrap: wrap;
+           .head_logo{
+      
+            img{
+                width: 80%;
+            }
+
+          
+
+        }
+            }
+        
+        }
+    }
+} 
+    
+
+}
