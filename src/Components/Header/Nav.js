@@ -19,7 +19,7 @@ export default function Nav() {
    
   return (
     <nav className='navigation'>
-       <div ref={navRef} className="nav">
+       <div  className="nav">
             <ul className="nav_bar">
                   {
                     nav.map((menu)=>
