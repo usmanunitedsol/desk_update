@@ -11,7 +11,7 @@ const Footer = () => {
                    
                 <div className='footer'>
                             
-                        <section className="container d-flex justify-content-center justify-content-lg-between footer_section p-4 ">
+                        <section className="container flex justify-center  lg:justify-between  footer_section p-4 ">
 
 
                         
@@ -35,43 +35,47 @@ const Footer = () => {
                                 <h6 className="text-uppercase fw-bold mb-4">
                                 <a> <img src={logo1} className="img-fluid logo_footer" alt="brand" /></a>
                                 </h6>
-                                <p>
+                                <p className='primary_text text-white'>
                                 Our mission at TheDesk is to offer the best facilities, amenities and features under one roof. Building a talented community, TheDesk is a professional platform for budding entrepreneurs, long-term freelancers, overtime workers.
                                 </p>
                             </div>
 
-                            <div className="col-md-2 text_styling col-lg-2 col-xl-2 mx-auto mt-4">
-                                <p className="text-uppercase  mb-4">Company</p>
-                                <p>
+                            <div className="col-md-2 text_styling col-lg-2 col-xl-2 mx-auto   ">
+
+                                <p className="text-uppercase md:mt-16 ">Company</p>
+                                
+                                <div className='flex flex-col justify-between mt-6'>
+                                <p className=' pb-3'>
                                 <a href="#!" className="text-reset">
                                     Workspace
                                 </a>
-                                </p>
-                                <p>
+                                </p >
+                                <p className=' pb-3'>
                                 <a href="#!" className="text-reset">
                                 About
                                 </a>
                                 </p>
-                                <p>
+                                <p className=' pb-3'>
                                 <a href="#!" className="text-reset">
                                 Packages
                                 </a>
                                 </p>
+                                </div>
                             </div>
 
-                            <div className="col-md-2 col-lg-2 text_styling col-xl-2 mx-auto mt-5">
+                            <div className="col-md-2 col-lg-2 text_styling col-xl-2 flex flex-col mx-auto  md:mt-[104px]">
                             
-                                <p className="mt-5 ">
+                                <p className=' pb-3'>
                                 <a href="#!" className="text-reset ">
                                 Photo Gallery
                                 </a>
                                 </p>
-                                <p>
+                                <p className=' pb-3'>
                                 <a href="#!" className="text-reset">
                                     Blog
                                 </a>
                                 </p>
-                                <p>
+                                <p className=' pb-3'>
                                 <a href="#!" className="text-reset">
                                 Contact
                                 </a>
@@ -81,7 +85,7 @@ const Footer = () => {
 
                             <div className="col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 mt-4">
                                 <p className="text-uppercase  mb-4">Follow Us on</p>
-                                        <div className="social_icons">
+                                        <div className=" flex  justify-center  md:justify-start">
                                         <a> <img src={logo_fb} className="img-fluid logo_fb" alt="brand" /></a>
                                         <a> <img src={logo_intsa} className="img-fluid logo_intsa" alt="brand" /></a>
                                         <a> <img src={logo_linkdin} className="img-fluid logo_linkdin" alt="brand" /></a>

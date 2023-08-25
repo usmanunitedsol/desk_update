@@ -4,13 +4,17 @@
 
 
 header{
- 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 25px 110px;
-    background-color: red;
+
    
     .headerContainer{
 
-        width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box;
+        width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box; padding: 20px 150px;
+    
 
         
         .header{
@@ -65,10 +69,27 @@ header{
 
             .nav_block{
                 padding: 25px 0px;
-                .navigation{         
+                .navigation{    
+                  .menu_icon{
+                    .hamburger-react {
+                        color: white
+                    }
+                  }  
                     .nav{
-        
-                         
+                     
+                        .mobile-nav{
+                            background: #2C897E;
+                            width: 100%;
+                            padding: 10px 10px;
+                            .mobile-nav-bar{
+                                @include flex; flex-direction: column;align-items: flex-start; grid-gap:30px;padding-left: unset;  
+                                .mobile-nav-list{
+                                    .mobile-nav-item{
+                                        color: white;font-weight: 300;font-size: 15px;text-decoration: none;transition: .3s ease-in-out; display: inline-block;
+                                    }
+                                }
+                            }
+                        }
 
                         .nav_bar{
                             @include flex; justify-content: center; grid-gap:30px;padding-left: unset;  
@@ -150,7 +171,7 @@ header{
        
         .headerContainer{
     
-            width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box; position: relative;
+            width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box;padding: 10px 10px;
     
             
             .header{
@@ -180,7 +201,7 @@ header{
         padding: 25px 10px;
     .headerContainer{
     
-        width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box; position: relative;
+        width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box;  padding: 10px 10px;
 
         
         .header{
@@ -212,7 +233,7 @@ header{
         padding: 25px 10px;
     .headerContainer{
     
-        width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box; position: relative;
+        width: 100%;margin: auto;max-width: 1700px; box-sizing: border-box; padding: 20px 40px;
 
         
         .header{

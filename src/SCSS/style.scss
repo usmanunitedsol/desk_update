@@ -1,0 +1,128 @@
+   @import "main.scss";
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+   
+//    /******************************** home page styling************************************/
+
+.sectionhead{
+    max-width: 1006px;
+    margin: auto;
+    text-align: center;
+   .secondary_title{
+    font-size:50px;
+    line-height:60px;
+    font-weight: 400;
+   }
+}
+
+
+.section_bg {
+    background:#BDAF93;
+}
+.home_wrapper{
+   .joinus{
+    max-width:1006px;
+    margin: auto;
+    text-align: center;
+   }
+}
+
+.iconsrow{
+
+    @include flex();
+    flex-wrap:wrap;
+    padding: 50px 0px;
+    .iconsData{
+       
+    }
+}
+
+
+.cardsSectionData{
+    @include grid();grid-template-columns: repeat(4, minmax(310px, 1fr));max-width:1200px; margin:auto;grid-gap:15px;padding:50px 0px;
+    .cards{
+      
+        text-align: center;
+        background: rgba(255, 255, 255, 0.80);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+        padding:30px;
+        border-radius: 0px 40px 0px 0px;
+
+        img{
+            padding-bottom:15px;
+        }
+
+        .secondary_title{
+            font-size:20px;
+            padding-bottom:0px
+        }
+
+        .primary_text{
+            font-size: 16px;
+            line-height:24px;
+        }
+
+    }
+}
+
+
+.home_wrapper{
+    .section_bg{
+        background-image: url('../../public/images/BG.png');background-repeat: no-repeat;background-position: bottom;background-size: contain;
+    }
+}
+
+
+.gallery{
+    @include grid();grid-gap:0px;padding:50px 0px;
+  
+}
+
+
+.cardsMembers{
+    .cardsitems{
+        .cards_top{
+
+            .cards_top_con{
+
+            .secondary_title{
+                font-size: 34px;
+                padding-bottom: 0px;
+                padding-top: 30px;
+            }
+        }
+        }
+    }
+
+    .second_sec{
+        .button_block{
+             
+            .btn-secondry{
+                border: 1px solid  #1E3954;
+                color: #1E3954;
+            }
+        }
+    }
+}
+
+
+
+
+//    /******************************** Terms and conditions************************************/
+
+
+.TermsandCondition{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    .side_bar{
+        max-width: 345px;
+        width: 100%;
+        .tc_Sidebar{
+            height: 100%;
+        }
+    }
+}

@@ -6,8 +6,19 @@
     background-size: cover; 
     padding: 300px 0px;
     width: 100%;
-    margin: auto;
-    max-width: 1700px;
+ 
+      
+    .intro_section_row{
+      max-width: 1045px;
+      margin: auto;
+      width: 100%;
+
+      .banner_content{
+        .primary_text{
+          color: white;
+        }
+      }
+    }
 
   }
 
@@ -20,3 +31,6 @@
     grid-gap: 20px;
     flex-wrap: wrap;
   }
+
+
+  

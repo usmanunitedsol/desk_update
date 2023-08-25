@@ -1,0 +1,127 @@
+
+@import "main.scss";
+//    /********************************media query home page styling************************************/
+@media screen and (min-width:1024px) and (max-width:1400px){
+    .sectionhead{
+        max-width: 1006px;
+        margin: auto;
+        text-align: center;
+       .secondary_title{
+        font-size:40px;
+        line-height:50px;
+        font-weight: 400;
+       }
+    }
+    .cardsSectionData{
+        @include grid();    justify-items: center;grid-template-columns: repeat(3, minmax(310px, 1fr));max-width:1200px; margin:auto;grid-column-gap:0px;padding:50px 0px;
+        .cards{
+      
+            text-align: center;
+            background: rgba(255, 255, 255, 0.80);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+            padding:30px;
+            border-radius: 0px 40px 0px 0px;
+    
+            img{
+                padding-bottom:15px;
+            }
+    
+            .secondary_title{
+                font-size:20px;
+                padding-bottom:10px
+            }
+    
+            .primary_text{
+                font-size: 16px;
+                line-height:24px;
+            }
+    
+        }
+    }   
+    
+}
+
+@media screen and (min-width:767px) and (max-width:1024px){
+
+    .sectionhead{
+        max-width: 1006px;
+        margin: auto;
+        text-align: center;
+       .secondary_title{
+        font-size:30px;
+        line-height:40px;
+        font-weight: 400;
+       }
+    }
+    .cardsSectionData{
+        @include grid();    justify-items: center;grid-template-columns: repeat(2, minmax(310px, 1fr));max-width:1200px; margin:auto;grid-column-gap:0px;padding:50px 0px;
+        .cards{
+          
+            text-align: center;
+            background: rgba(255, 255, 255, 0.80);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+            padding:30px;
+            border-radius: 0px 40px 0px 0px;
+    
+            img{
+                padding-bottom:15px;
+            }
+    
+            .secondary_title{
+                font-size:20px;
+                padding-bottom:10px
+            }
+    
+            .primary_text{
+                font-size: 16px;
+                line-height:24px;
+            }
+    
+        }
+    }
+    }
+
+   
+
+
+    @media screen and (min-width:200px) and (max-width:767px){
+        .sectionhead{
+            max-width: 1006px;
+            margin: auto;
+            text-align: center;
+           .secondary_title{
+            font-size:30px;
+            line-height:40px;
+            font-weight: 400;
+           }
+        }
+        .cardsSectionData{
+            @include grid();    justify-items: center;grid-template-columns: repeat(1, minmax(310px, 1fr));max-width:1200px; margin:auto;grid-column-gap:0px;padding:50px 0px;
+            .cards{
+           
+                text-align: center;
+                background: rgba(255, 255, 255, 0.80);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+                padding:30px;
+                border-radius: 0px 40px 0px 0px;
+             
+
+        
+                img{
+                    padding-bottom:15px;
+                }
+        
+                .secondary_title{
+                    font-size:20px;
+                    padding-bottom:10px
+                }
+        
+                .primary_text{
+                    font-size: 16px;
+                    line-height:24px;
+                }
+        
+            }
+        }
+               
+    }

@@ -15,4 +15,133 @@
 }
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*/ HTML5 display-role reset for older browsers /*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+body {
+	line-height: 1;
+	background:#fff;
+	font-family: 'Roboto', sans-serif;
+	color:#000000;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a { color:#2C897E; text-decoration:none; transition: background-color 0.4s ease 0s, border 0s ease 0s, color 0.4s ease 0s, opacity 0.4s ease-in-out 0s; }
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2{font-family: 'Sarabun', sans-serif; font-weight: 600;}
+h3, h4{font-family: 'Sarabun', sans-serif; font-weight: 500;}
+p{font-family: 'Roboto', sans-serif; font-weight:300;} 
+
+img{max-width: 100%;}
+
+$TextColor:#484848;
+$HighlitedColor:#2C897E;
+$TitleColor:#141414;
+
+@mixin mainContainer{max-width:1700px; margin:auto; padding:0px 20px; box-sizing: border-box;}
 @mixin flex{display: flex; justify-content: space-between; align-items: center; }
+@mixin primaryTitle{font-size: 60px; line-height: 60px; text-transform: capitalize; color: var(--white); font-family: "Sarabun", sans-serif; padding-bottom:30px;}
+@mixin secondaryTitle{font-size: 42px; line-height: 53px; font-family: 'Sarabun', sans-serif; font-weight: 700; padding-bottom:30px; color: $TitleColor;}
+@mixin primaryText{font-size: 22px; line-height: 33px; color: $TextColor; font-family: 'Roboto', sans-serif; padding-bottom: 25px;}
+@mixin grid{display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); grid-gap: 30px;}
+
+
+
+.grid{
+	@include grid();
+}
+.main_container{
+	@include mainContainer();
+}
+
+.section_bg{background-color: #E9E9E9;}
+.primary_title{
+	@include primaryTitle();
+	span{
+		color: var($TitleColor);
+	}
+}
+
+.primary_text{
+	@include primaryText();
+	// &:last-child{
+	// 	padding-bottom: 0px;
+	// }
+	.highlighted{
+		color:var(--secondary-color);
+	}
+}
+
+.secondary_title{
+	@include secondaryTitle();
+}
+
+
+.section_padding{
+	padding:60px 0px; box-sizing: border-box;
+	&.zero_top{
+		padding-top:0px;
+	}
+}
+
+
+@media screen and (min-width:200px) and (max-width:767px){
+	.primary_title{font-size: 25px; line-height: 33px; padding-bottom: 20px;}	
+	.primary_text{ font-size: 15px; line-height: 23px; padding-bottom: 20px;}	
+	.secondary_title{font-size: 20px; line-height: 28px; padding-bottom: 15px;}
+	.section_padding{padding:30px 0px;}
+	.grid{grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); grid-gap: 20px;}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+	.primary_title{font-size: 28px; line-height: 38px; padding-bottom: 20px;}	
+	.primary_text{ font-size: 16px; line-height: 24px; padding-bottom: 20px;}	
+	.secondary_title{font-size: 22px; line-height: 30px; padding-bottom: 15px;}
+	.section_padding{padding:40px 0px;}
+	.grid{grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); grid-gap: 20px;}
+}
+
+@media screen and (min-width:1025px) and (max-width:1400px){
+	.primary_title{font-size: 50px; line-height: 40px; padding-bottom: 20px;}
+	.secondary_title{font-size: 24px; line-height: 32px;}
+	.grid{grid-template-columns: repeat(auto-fill, 1fr); grid-gap: 20px;}
+}
